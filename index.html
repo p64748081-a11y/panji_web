@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Panji</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Panji<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+        <button class="theme-btn" id="themeBtn">Mode Gelap</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Halo, saya Panji</p>
+          <h1>Saya membuat laman kreatif dan portofolio digital.</h1>
+          <p>Saya membantu klien membangun pengalaman online yang menarik dengan desain modern, interaktif, dan mudah digunakan.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card__inner">
+            <h2>Keahlian utama</h2>
+            <ul>
+              <li>Desain Web</li>
+              <li>Animasi Halus</li>
+              <li>UI/UX Interaktif</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span>01.</span>
+          <h2>Tentang Saya</h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p>Saya seorang pembuat web portofolio sederhana dengan fokus pada presentasi profesional, performa cepat, dan pengalaman pengguna yang jelas. Saya suka membuat proyek yang terasa hidup melalui animasi dan responsivitas.</p>
+            <p>Saya terbiasa bekerja dengan HTML, CSS, JavaScript, dan membangun antarmuka yang ramah untuk setiap perangkat.</p>
+          </div>
+          <div class="skills-panel">
+            <div class="skill-item">
+              <span>Desain</span>
+              <div class="progress"><span style="width: 92%"></span></div>
+            </div>
+            <div class="skill-item">
+              <span>Interaksi</span>
+              <div class="progress"><span style="width: 88%"></span></div>
+            </div>
+            <div class="skill-item">
+              <span>Pengalaman Pengguna</span>
+              <div class="progress"><span style="width: 85%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span>02.</span>
+          <h2>Proyek</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Landing Page Modern</h3>
+            <p>Desain halaman depan untuk produk digital dengan animasi halus dan CTA jelas.</p>
+            <div class="project-tags"><span>UI</span><span>Web</span><span>Animasi</span></div>
+          </article>
+          <article class="project-card">
+            <h3>Portofolio Personal</h3>
+            <p>Sebuah portofolio responsif yang menonjolkan pengalaman, keterampilan, dan karya dengan tampilan minimalis.</p>
+            <div class="project-tags"><span>Branding</span><span>UX</span><span>Responsive</span></div>
+          </article>
+          <article class="project-card">
+            <h3>Kontak Interaktif</h3>
+            <p>Formulir kontak yang mudah diisi, cocok untuk menerima pesan dan memperluas jejaring.</p>
+            <div class="project-tags"><span>Form</span><span>Design</span><span>Modern</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-heading">
+            <span>03.</span>
+            <h2>Kontak</h2>
+          </div>
+          <p>Siap bekerja sama? Kirim pesan dan saya akan segera membalas dengan ide terbaik untuk website Anda.</p>
+          <div class="contact-card">
+            <h3>Info cepat</h3>
+            <p>Email: <a href="mailto:panji@example.com">panji@example.com</a></p>
+            <p>Telepon: <a href="tel:+628123456789">+62 812-3456-789</a></p>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:panji@example.com" method="post" enctype="text/plain">
+          <label>Nama
+            <input type="text" name="name" placeholder="Nama Anda" required />
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="Email Anda" required />
+          </label>
+          <label>Pesan
+            <textarea name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Panji. Dibuat dengan JavaScript dan CSS.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
