@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Panji</title>
+  <title>Portofolio Panji - Desainer Web & Developer Interaktif</title>
+  <meta name="description" content="Portofolio profesional Panji. Desain web modern, animasi halus, dan pengalaman pengguna yang luar biasa." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="topbar">
+  <!-- Navbar -->
+  <header class="topbar" id="topbar">
     <div class="container header-inner">
       <a href="#home" class="brand">Panji<span>.</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi">
@@ -20,8 +22,9 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang</a>
         <a href="#projects">Proyek</a>
+        <a href="#testimonials">Testimoni</a>
         <a href="#contact">Kontak</a>
-        <button class="theme-btn" id="themeBtn">Mode Gelap</button>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">Mode Gelap</button>
       </nav>
     </div>
   </header>
@@ -84,60 +87,267 @@
       <div class="container">
         <div class="section-heading">
           <span>02.</span>
-          <h2>Proyek</h2>
+          <h2>Proyek Unggulan</h2>
         </div>
+        
+        <div class="project-filter">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="design">Desain</button>
+          <button class="filter-btn" data-filter="interactive">Interaktif</button>
+        </div>
+
         <div class="project-grid">
-          <article class="project-card">
-            <h3>Landing Page Modern</h3>
-            <p>Desain halaman depan untuk produk digital dengan animasi halus dan CTA jelas.</p>
-            <div class="project-tags"><span>UI</span><span>Web</span><span>Animasi</span></div>
+          <article class="project-card" data-category="web">
+            <div class="project-header">
+              <div class="project-icon">🌐</div>
+              <h3>Landing Page Modern</h3>
+            </div>
+            <p>Desain halaman depan untuk produk digital dengan animasi halus, CTA jelas, dan konversi tinggi. Menggunakan teknik lazy loading dan optimasi performa.</p>
+            <div class="project-tags">
+              <span>UI Design</span>
+              <span>Web</span>
+              <span>Animasi</span>
+              <span>Responsive</span>
+            </div>
           </article>
-          <article class="project-card">
-            <h3>Portofolio Personal</h3>
-            <p>Sebuah portofolio responsif yang menonjolkan pengalaman, keterampilan, dan karya dengan tampilan minimalis.</p>
-            <div class="project-tags"><span>Branding</span><span>UX</span><span>Responsive</span></div>
+
+          <article class="project-card" data-category="design">
+            <div class="project-header">
+              <div class="project-icon">🎨</div>
+              <h3>Sistem Desain Komprehensif</h3>
+            </div>
+            <p>Membuat sistem desain lengkap dengan komponen yang dapat digunakan kembali, panduan warna, tipografi, dan ikon konsisten.</p>
+            <div class="project-tags">
+              <span>Design System</span>
+              <span>Branding</span>
+              <span>UI Kit</span>
+            </div>
           </article>
-          <article class="project-card">
-            <h3>Kontak Interaktif</h3>
-            <p>Formulir kontak yang mudah diisi, cocok untuk menerima pesan dan memperluas jejaring.</p>
-            <div class="project-tags"><span>Form</span><span>Design</span><span>Modern</span></div>
+
+          <article class="project-card" data-category="web">
+            <div class="project-header">
+              <div class="project-icon">📱</div>
+              <h3>Portofolio Personal Responsif</h3>
+            </div>
+            <p>Sebuah portofolio responsif yang menonjolkan pengalaman, keterampilan, dan karya dengan tampilan minimalis dan modern. Bekerja sempurna di semua perangkat.</p>
+            <div class="project-tags">
+              <span>Branding</span>
+              <span>UX</span>
+              <span>Responsive</span>
+            </div>
           </article>
+
+          <article class="project-card" data-category="interactive">
+            <div class="project-header">
+              <div class="project-icon">⚡</div>
+              <h3>Form Kontak Interaktif</h3>
+            </div>
+            <p>Formulir kontak yang mudah diisi dengan validasi real-time, feedback visual, dan integrasi email. Meningkatkan user experience dan engagement.</p>
+            <div class="project-tags">
+              <span>Form</span>
+              <span>Interaktif</span>
+              <span>Modern</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="interactive">
+            <div class="project-header">
+              <div class="project-icon">🎭</div>
+              <h3>Dashboard Animasi</h3>
+            </div>
+            <p>Dashboard dengan grafik interaktif, animasi smooth, dan transisi yang menarik. Menampilkan data dengan cara yang engaging dan mudah dipahami.</p>
+            <div class="project-tags">
+              <span>Dashboard</span>
+              <span>Data Viz</span>
+              <span>Animasi</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-header">
+              <div class="project-icon">🛍️</div>
+              <h3>E-Commerce Modern</h3>
+            </div>
+            <p>Toko online dengan katalog produk interaktif, keranjang belanja yang smooth, dan checkout yang user-friendly. Dioptimalkan untuk konversi maksimal.</p>
+            <div class="project-tags">
+              <span>E-Commerce</span>
+              <span>UX</span>
+              <span>Web Design</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card" data-count="45">
+            <h3><span class="stat-number">0</span>+</h3>
+            <p>Proyek Selesai</p>
+          </div>
+          <div class="stat-card" data-count="50">
+            <h3><span class="stat-number">0</span>+</h3>
+            <p>Klien Puas</p>
+          </div>
+          <div class="stat-card" data-count="100">
+            <h3><span class="stat-number">0</span>%</h3>
+            <p>Kepuasan Klien</p>
+          </div>
+          <div class="stat-card" data-count="8">
+            <h3><span class="stat-number">0</span>+</h3>
+            <p>Tahun Pengalaman</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span>03.</span>
+          <h2>Teknologi & Tools</h2>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <span class="tech-icon">💻</span>
+            <h4>Frontend</h4>
+            <p>HTML, CSS, JavaScript, React, Vue.js, Tailwind CSS</p>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">⚙️</span>
+            <h4>Backend</h4>
+            <p>Node.js, Express, MongoDB, PostgreSQL, Firebase</p>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🎨</span>
+            <h4>Design</h4>
+            <p>Figma, Adobe XD, Sketch, Adobe Creative Suite</p>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🔧</span>
+            <h4>Tools</h4>
+            <p>Git, VS Code, Webpack, Docker, CI/CD Pipelines</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <span>04.</span>
+          <h2>Apa Kata Klien</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Panji sangat profesional dan responsif. Hasil karyanya melampaui ekspektasi saya. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <strong>Budi Santoso</strong>
+                <span>CEO, Tech Startup</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Desain yang dibuat sangat indah dan fungsional. Panji benar-benar memahami kebutuhan bisnis kami."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <strong>Siti Rahayu</strong>
+                <span>Marketing Director</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Komunikasi yang baik, timeline tepat, dan kualitas kerja luar biasa. Sangat puas dengan hasilnya!"</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <strong>Ahmad Wijaya</strong>
+                <span>Business Owner</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="contact">
       <div class="container contact-grid">
-        <div>
+        <div class="contact-content">
           <div class="section-heading">
-            <span>03.</span>
-            <h2>Kontak</h2>
+            <span>05.</span>
+            <h2>Mari Berkolaborasi</h2>
           </div>
-          <p>Siap bekerja sama? Kirim pesan dan saya akan segera membalas dengan ide terbaik untuk website Anda.</p>
-          <div class="contact-card">
-            <h3>Info cepat</h3>
-            <p>Email: <a href="mailto:panji@example.com">panji@example.com</a></p>
-            <p>Telepon: <a href="tel:+628123456789">+62 812-3456-789</a></p>
+          <p>Siap untuk membawa proyek Anda ke level berikutnya? Hubungi saya dan mari kita ciptakan sesuatu yang luar biasa bersama.</p>
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <h3>📧 Email</h3>
+              <p><a href="mailto:panji@example.com">panji@example.com</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>📱 Telepon</h3>
+              <p><a href="tel:+628123456789">+62 812-3456-789</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>📍 Lokasi</h3>
+              <p>Jakarta, Indonesia</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-icon" title="LinkedIn">in</a>
+            <a href="#" class="social-icon" title="GitHub">gh</a>
+            <a href="#" class="social-icon" title="Instagram">ig</a>
+            <a href="#" class="social-icon" title="Twitter">tw</a>
           </div>
         </div>
-        <form class="contact-form" action="mailto:panji@example.com" method="post" enctype="text/plain">
-          <label>Nama
-            <input type="text" name="name" placeholder="Nama Anda" required />
-          </label>
-          <label>Email
-            <input type="email" name="email" placeholder="Email Anda" required />
-          </label>
-          <label>Pesan
-            <textarea name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
-          </label>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Siapa nama Anda?" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Apa yang ingin Anda diskusikan?" required />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ceritakan detail proyek Anda..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
           <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          <span class="form-success" id="formSuccess"></span>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container">© 2026 Panji. Dibuat dengan JavaScript dan CSS.</div>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Panji. Dibuat dengan <span class="heart">♥</span> menggunakan HTML, CSS, dan JavaScript.</p>
+        <p class="footer-note">Scroll ke atas untuk kembali ke menu</p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
